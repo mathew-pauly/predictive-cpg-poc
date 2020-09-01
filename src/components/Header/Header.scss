@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5% 50px 5%;
+    img{
+        height: 100px;
+        width: 160px;
+    }
+    .app-title{
+        display: flex;
+        flex-direction: column;
+        span{
+            font-weight: bold;
+        }
+    }
+    hr{
+        border-color: orange;
+        margin:0;
+    }
+}

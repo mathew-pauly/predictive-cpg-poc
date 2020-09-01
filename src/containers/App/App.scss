@@ -1,0 +1,89 @@
+.app-container{
+    .main-container{
+        margin-left: 5%;
+        margin-right: 5%;
+        h4,h5{
+            color:gray;
+        }
+        .row{
+            .left{
+                padding-right: 45px;
+                border-right: 2px solid rgba(0,0,0,.1);
+                div{
+                    margin-bottom: 20px;
+                    min-height: 60px;
+                }
+                .answer-container{
+                    input {
+                        border-top-style: hidden;
+                        border-right-style: hidden;
+                        border-left-style: hidden;
+                        border-bottom-style: groove;
+                        border-bottom-color: rgba(0,0,0,.1);
+                        width: 100%;
+                      }
+                      
+                      input:focus {
+                        outline: none;
+                      }
+                }
+                .btn-submit, .btn-dataset{
+                    min-height: 0;
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+                .decision-tree-container{
+                    height: 300px;
+                    border: 1px solid rgba(0,0,0,.1);
+                    text-align: center;
+                    h6{
+                        padding: 5px;
+                        background: antiquewhite;
+                        border-bottom: 1px solid rgba(0,0,0,.1);
+                    }
+                }
+            }
+
+            .questions-container{
+                padding-left: 25px;
+                p{
+                    text-align: justify;
+                    transition: transform .2s; /* Animation */
+                    &:hover {
+                        transform: scale(1.1);
+                        cursor: pointer;
+                    }
+                }
+                .tag{
+                    font-size: 0.5em;
+                    margin-left: 5px;
+                    background: darkslateblue;
+                    border-radius: 10px;
+                    padding: 5px;
+                    color: white;
+                }
+            }
+        }
+        .dataset-container{
+            h4{
+                margin-bottom: 20px;
+            }
+            hr{
+                border-top: 2px solid rgba(0,0,0,.1);
+            }
+            .col-md-6{
+                min-height: 150px;
+                &:first-child{
+                    border-right: 1px solid rgba(0,0,0,.1);
+                    padding-right:0;
+                }
+                &:last-child{
+                    padding-left:0;
+                    h5{
+                        padding-left:15px;
+                    }
+                }
+            }
+        }
+    }
+}
